@@ -15,18 +15,6 @@ function App() {
           <Route exact path = "/tulip" component={Body}></Route>
           <Route exact ath = "/magnet" component={Body}></Route>
         </Switch>
-        {/* <Route name = "aafc" exact path ="/" component={Body}></Route> */}
-        {/* <Route exact path = "/tulip" component={
-          <Body
-            introduction={tulip.introduction}
-            employerInformation={tulip.employerInformation}
-            jobDescription={tulip.jobDescription}
-            goals={tulip.goals}
-            conclusion={tulip.conclusion}
-            acknowledgements={tulip.acknowledgements}
-          />}>
-        </Route>
-        <Route exact path = "/magnet" component={Body}></Route> */}
       </div>
     </Router>
   );

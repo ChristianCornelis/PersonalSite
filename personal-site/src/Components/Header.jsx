@@ -1,96 +1,33 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-import { Tabs, Tab, Nav, Navbar, NavItem }  from 'react-bootstrap';
-import * as aafc from '../Content/AAFC';
-import * as tulip from '../Content/Tulip';
-import * as magnet from '../Content/Magnet';
-// import Body from './Body';import NavLink from 'react-bootstrap/NavLi
+import { NavLink } from "react-router-dom";
+import { Navbar, NavItem }  from 'react-bootstrap';
 /**
- * Header component
+ * Header component containing navbar
  */
 export default class Header extends  React.Component {
+    state = { selected: window.location.pathname};
+    
+    updateState= (selection) => {
+        this.setState({
+            selected: selection
+        })
+    }
+
     render() {
         return (
         <header className="App-header" >
             <Navbar fixed="top" className="Nav-header">
-                {/* <Tabs defaultActiveKey="home" id="test">
-                    <Tab eventKey="home" title="Home"></Tab>
-                    <Tab eventKey="agCanada" title="Agriculture Canada">
-                        <Body 
-                            introduction={aafc.introduction}
-                            employerInformation={aafc.employerInformation}
-                            jobDescription={aafc.jobDescription}
-                            goals={aafc.goals}
-                            conclusion={aafc.conclusion}
-                            acknowledgements={aafc.acknowledgements}
-                        />
-                        </Tab>
-                    <Tab eventKey="tulip" title="Tulip Retail">
-                        <Body
-                            introduction={tulip.introduction}
-                            employerInformation={tulip.employerInformation}
-                            jobDescription={tulip.jobDescription}
-                            goals={tulip.goals}
-                            conclusion={tulip.conclusion}
-                            acknowledgements={tulip.acknowledgements}
-                        />
-                    </Tab>
-                    <Tab eventKey="magnet" title="Magnet Forensics"></Tab>
-                </Tabs> */}
-                <NavItem className="Nav-item">
-                    {/* <Link to = "aafc" params= {{ 
-                        introduction: aafc.introduction,
-                        employerInformation: aafc.employerInformation,
-                        jobDescription: aafc.jobDescription,
-                        goals: aafc.goals,
-                        conclusion: aafc.conclusion,
-                        acknowledgements: aafc.acknowledgements
-                    }}>
-                      Home
-                    </Link> */}
+                <NavItem className={this.state.selected === '/' ? "Nav-selected Nav-item" : "Nav-item"} onClick={() => this.updateState('/')}>
                     <NavLink to = {"/"} >Home</NavLink>
                 </NavItem>
-                <NavItem  className="Nav-item">
-                    <NavLink to = {{
-                        pathname: "/aafc", 
-                        state: {
-                            introduction: aafc.introduction,
-                            employerInformation: aafc.employerInformation,
-                            jobDescription: aafc.jobDescription,
-                            goals: aafc.goals,
-                            conclusion: aafc.conclusion,
-                            acknowledgements: aafc.acknowledgements
-                        }
-                    }}>AAFC
-                    </NavLink>
+                <NavItem  className={this.state.selected === '/aafc' ? "Nav-selected Nav-item" : "Nav-item"} onClick={() => this.updateState('/aafc')}>
+                    <NavLink to = {"/aafc"}>AAFC</NavLink>
                 </NavItem>
-                <NavItem  className="Nav-item"> 
-                    <NavLink to = {{
-                        pathname: "/tulip", 
-                        state: {
-                            introduction: tulip.introduction,
-                            employerInformation: tulip.employerInformation,
-                            jobDescription: tulip.jobDescription,
-                            goals: tulip.goals,
-                            conclusion: tulip.conclusion,
-                            acknowledgements: tulip.acknowledgements
-                        }
-                    }}>Tulip
-                    </NavLink>
+                <NavItem  className={this.state.selected === "/tulip" ? "Nav-selected Nav-item" : "Nav-item"} onClick={() => this.updateState('/tulip')}> 
+                    <NavLink to = {"/tulip"}>Tulip</NavLink>
                 </NavItem>
-                <NavItem  className="Nav-item">
-                    <NavLink to = {{
-                        pathname: "/magnet", 
-                        state: {
-                            introduction: magnet.introduction,
-                            employerInformation: magnet.employerInformation,
-                            jobDescription: magnet.jobDescription,
-                            goals: magnet.goals,
-                            conclusion: magnet.conclusion,
-                            acknowledgements: magnet.acknowledgements
-                        }
-                    }}>Magnet
-                    </NavLink>
+                <NavItem  className={this.state.selected === '/magnet' ? "Nav-selected Nav-item" : "Nav-item"} onClick={() => this.updateState('/magnet')}>
+                    <NavLink to = {"/magnet"}>Magnet</NavLink>
                 </NavItem>
             </Navbar>
         </header>);

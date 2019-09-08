@@ -3,7 +3,7 @@ import '../App.css';
 
 export default class Home extends React.Component {
     render() {
-        return (<div>
+        return (<div className="App-home">
         <br/>
             <p>
                 This site contains reports created over the duration of my time in the Computer Science Co-op Program at the University of Guelph from 2017-2019.
