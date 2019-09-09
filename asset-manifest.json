@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ChristianCornelis/PersonalSite/static/css/main.11b2589f.chunk.css",
-    "main.js": "/ChristianCornelis/PersonalSite/static/js/main.e5f0f455.chunk.js",
-    "main.js.map": "/ChristianCornelis/PersonalSite/static/js/main.e5f0f455.chunk.js.map",
-    "runtime~main.js": "/ChristianCornelis/PersonalSite/static/js/runtime~main.4b5f0aa1.js",
-    "runtime~main.js.map": "/ChristianCornelis/PersonalSite/static/js/runtime~main.4b5f0aa1.js.map",
-    "static/js/2.b02e650e.chunk.js": "/ChristianCornelis/PersonalSite/static/js/2.b02e650e.chunk.js",
-    "static/js/2.b02e650e.chunk.js.map": "/ChristianCornelis/PersonalSite/static/js/2.b02e650e.chunk.js.map",
-    "index.html": "/ChristianCornelis/PersonalSite/index.html",
-    "precache-manifest.042db372091031c638bef79bb8d7072b.js": "/ChristianCornelis/PersonalSite/precache-manifest.042db372091031c638bef79bb8d7072b.js",
-    "service-worker.js": "/ChristianCornelis/PersonalSite/service-worker.js",
-    "static/css/main.11b2589f.chunk.css.map": "/ChristianCornelis/PersonalSite/static/css/main.11b2589f.chunk.css.map"
+    "main.css": "/PersonalSite/static/css/main.11b2589f.chunk.css",
+    "main.js": "/PersonalSite/static/js/main.dab21e5d.chunk.js",
+    "main.js.map": "/PersonalSite/static/js/main.dab21e5d.chunk.js.map",
+    "runtime~main.js": "/PersonalSite/static/js/runtime~main.9c3a3ffe.js",
+    "runtime~main.js.map": "/PersonalSite/static/js/runtime~main.9c3a3ffe.js.map",
+    "static/js/2.b02e650e.chunk.js": "/PersonalSite/static/js/2.b02e650e.chunk.js",
+    "static/js/2.b02e650e.chunk.js.map": "/PersonalSite/static/js/2.b02e650e.chunk.js.map",
+    "index.html": "/PersonalSite/index.html",
+    "precache-manifest.9c18d27bef22e9c3dfee05d2afe81f99.js": "/PersonalSite/precache-manifest.9c18d27bef22e9c3dfee05d2afe81f99.js",
+    "service-worker.js": "/PersonalSite/service-worker.js",
+    "static/css/main.11b2589f.chunk.css.map": "/PersonalSite/static/css/main.11b2589f.chunk.css.map"
   }
 }
